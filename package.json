@@ -1,0 +1,14 @@
+{
+  "name": "cyber-security",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch scss/main.scss:./assets/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.3"
+  }
+}

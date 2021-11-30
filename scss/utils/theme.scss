@@ -1,0 +1,14 @@
+$default-mode: (
+    nav: $dark-nav-bg,
+    base: $dark-global-bg,
+    text:$dark-text-color,
+    title: $dark-title-color,
+    primary: $primary
+);
+$light-mode: (
+    nav: $light-nav-bg,
+    base: map-get($default-mode, text),
+    text: map-get($default-mode, base),
+    title: $light-title-color,
+    primary: map-get($default-mode, ptimary),
+)

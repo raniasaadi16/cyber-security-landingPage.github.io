@@ -1,0 +1,170 @@
+header{
+    height: 100vh;
+    color: var(--color-text);
+    font-family: $font-family;
+    position: relative;
+    @media #{$xs}{
+        height: auto;
+    }
+    nav{
+        .un{
+            background-position: right bottom;
+            background-size: 300% 2px;
+            background-repeat: no-repeat;
+            &:hover{
+                background-image: linear-gradient(to right, #FFF 33%,transparent 33% 66%,#FFF 66%);
+                background-position: left bottom;
+                transition: background-position 1s;
+            }
+        }
+        a.un2{
+            font-size: 1.1em;
+            //color: #584E4A;
+            position: relative;
+            text-decoration: none;
+            padding-bottom: 8px;
+          }
+          a.un2:before, a.un2:after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            z-index: -1;
+            background-color: $navbar-dropdown-item-hover-background-color;
+          }
+          a.un2:before {
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+          }
+          a.un2:after {
+            opacity: 0;
+            transform: translateY(4px);
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+          }
+          a.un2:hover:before, a.un2:hover:after, a.un2:focus:before, a.un2:focus:after {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          a.un2:hover:before, a.un2:focus:before {
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+          }
+          a.un2:hover:after, a.un2:focus:after {
+            transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+          }
+        .navbar-end{
+            .navbar-item{
+                @media #{$tab}{
+                    padding-top: 0;
+                }
+            }
+        }
+        @media #{$tab}{
+            .field.is-grouped{
+                display: block !important;
+            }
+            .navbar-link{
+                padding: 0.4rem 0.75rem;
+                span{
+                    margin-left: -38px;
+                }
+                i{
+                    display: none;
+                }
+            }
+        }
+    }
+    .h-screen{
+        height: calc(100% - 10px);
+        margin-top: 0;
+        @media #{$xs},#{$sm}{
+            height: 500px;
+            flex-wrap: wrap;
+            margin-top: 72px;
+        }
+        @media #{$horizontal-mobile}{
+            height: 400px !important;
+        }
+    }
+    .circle{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px var(--color-text), 0 0 10px 10px var(--color-text), 0 0 0 10px var(--color-text);
+        @media #{$xs}{
+            width: 50vw;
+            height: 50vw;
+        }
+        @media #{$sm}{
+            width: 40vw;
+            height: 40vw;
+        }
+        .title{
+            font-size: 1.5vw;
+        }
+        p{
+            color: var(--color-text);
+            font-size: 3vw;
+            @media #{$xs}{
+               // font-size: 14px !important;
+            }
+            @media #{$xs},#{$sm}{
+                font-size: 4vw !important;
+            }
+        }
+    }
+    .dub{
+        position: absolute;
+        top: 0;
+        box-shadow: 0 0 0 0;
+       // animation: postScaleIn 2s 1 cubic-bezier(.36, .11, .89, .32);
+        border: 7px solid var(--color-text);
+    }
+    .dub-animation{
+        animation: postScaleIn 2s 1 cubic-bezier(.36, .11, .89, .32);
+    }
+    @keyframes postScaleIn {
+        from {
+            transform: scale(1);
+            opacity: .5;
+        }
+    
+        to {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+    .big-title{
+        font-size: 2.4vw;
+        @media #{$xs}{
+            font-size: 8vw;
+        }
+    }
+    .solgan{
+        font-size: 1.2vw;
+        @media #{$xs}{
+            font-size: 4vw;
+        }
+    }
+    .top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        @media #{$xs}{
+            width: 20%;
+        }
+    }
+    .bottom{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        @media #{$xs}{
+            width: 20%;
+        }
+    }
+  
+}

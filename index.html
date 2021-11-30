@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kakugo GmbH</title>
+    <meta name="description" content="Kakugo GmbH website" />
+    <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+    <meta name="author" content="@andersonmvd" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/e9dadb24e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--intro-->
+    <div id="intro">
+        <div class="bgvideodiv reduce">
+            <video playsinline="" autoplay="" muted="" preload="auto" poster="" loop="" class="bgvideo">
+                <source src="assets/video/export-cropped.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <section class="first-section" style="display: none;">
+            <div id="logo" class="container">
+                <div class="columns is-centered has-text-centered">
+                    <div class="sonar">
+                        <span class="logo-title down">かくご</span>
+                        <span class="logo-title-sub down">Kakugo GmbH</span>
+                    </div>
+
+                    <div class="circle-intro" style="animation-delay: -3s"></div>
+                    <div class="circle-intro" style="animation-delay: -2s"></div>
+                    <div class="circle-intro" style="animation-delay: -1s"></div>
+                    <div class="circle-intro" style="animation-delay: 0s"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--header-->
+    <header>
+    <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item un" data-scroll="top">
+            <p>かくご</p>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item un" data-scroll="why">
+              Our Why
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Our Services
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item un2" data-scroll="service1">
+                    Service 1 Cybersecurity
+                </a>
+                <a class="navbar-item un2" data-scroll="service2">
+                    Service 2 for Apps and More Apps
+                </a>
+                <a class="navbar-item un2" data-scroll="service3">
+                    Service 3 for Attack Surface Analysis
+                </a>
+                <a class="navbar-item un2" data-scroll="service4">
+                    Service 4 for AppSec and DevOps Security
+                </a>
+                <a class="navbar-item un2" data-scroll="service5">
+                    Service 5 for Passwordless Login and Modern Authentication
+                </a>
+                <a class="navbar-item un2" data-scroll="service6">
+                    Service 6 Cybersecurity and Privacy Advisory
+                </a>
+                <a class="navbar-item un2" data-scroll="service7">
+                    Service 7 Research as a Service
+                </a>
+              </div>
+            </div>
+            <a class="navbar-item un" data-scroll="contact">
+                Contact
+              </a>
+          </div>
+          
+          <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped mb-0">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="javascript:;">
+                          <i class="fa fa-globe"></i> &nbsp;&nbsp; <span data-i18n="menu-language">Language</span>
+                        </a>
+                        <div class="navbar-dropdown is-boxed language-menu">
+                          <a class="navbar-item un2" href="en">
+                              🇬🇧 English
+                          </a>
+                          <a class="navbar-item un2" href="de">
+                              🇨🇭 Deutsch
+                          </a>
+                          <a class="navbar-item un2" href="pt">
+                              🇧🇷 Português
+                          </a>
+                          <a class="navbar-item un2" href="jp">
+                              🇯🇵 日本語
+                          </a>
+                        </div>
+                    </div>
+    
+                  </div>
+                  <div class="theme-switch-wrapper">
+                    <button class="button" id="toggle-themes" type="button">Dark/Light Mode</button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="is-flex is-justify-content-center is-align-items-center h-screen">
+          <div style="position: relative;" class=" circle-main">
+          <div class="is-flex is-justify-content-center is-align-items-center mx-6 circle">
+              <div class="has-text-centered is-size-4">
+                  <p>かくご</p>
+                  <p class="mt-3 title">Kakugo GmbH</p>
+              </div>
+          </div>
+            <div class="mx-6 circle dub dub-animation" style="animation-delay: -3s;">
+            </div>
+            <div class="mx-6 circle dub dub-animation" style="animation-delay: -2s;">
+            </div>
+            <div class="mx-6 circle dub dub-animation" style="animation-delay: -1s;">
+            </div>
+            <div class="mx-6 circle dub dub-animation" style="animation-delay: 0s;">
+            </div>
+        </div>
+          <div class="mx-5">
+              <h2 class="big-title">Cybersecurity Title Here</h2>
+              <h5 class="solgan mt-4">Slogan for cybersecurity goes here</h5>
+          </div>
+      </div>
+      <img src="./assets/images/Mask Group.png" class="bottom" alt="">
+      <img src="./assets/images/Mask Group2.png" class="top" alt="">
+    </header>
+
+    <!--our why-->
+    <section class="our-why mx-6-desktop-only" id="why">
+        <h3 class="is-size-3">our Why</h3>
+        <h3>ー かくご</h3>
+        <div class="img-box mt-5">
+            <img src="./assets/images/5Sd3Com.jpg" onmouseover="$(this).hide();$('#big-img').fadeIn()" alt="">
+            <img src="./assets/images/G5kTcSq.jpg" id='big-img' alt="" style="display: none;">
+        </div>
+        <div class="text-box mt-3">
+            <img src="./assets/images/Mask Group3.png" alt="">
+            <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. </p>
+            <p class="my-4">Ut blandit ullamcorper tellus, eu ultricies mauris pulvinar in. Suspendisse venenatis dignissim nisl, et feugiat lectus pharetra at. Maecenas bibendum, eros a pharetra consectetur, leo arcu efficitur leo, quis sodales mauris leo sit amet magna. Vestibulum mollis rutrum ex quis venenatis. Cras venenatis magna nunc, vel imperdiet tortor vestibulum eu. Proin sollicitudin ante tellus, eu vestibulum tellus cursus in. Vivamus pharetra molestie euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce aliquet nibh eu pretium hendrerit. Nam odio diam, euismod in vehicula lobortis, mattis eget arcu. </p>
+            <p class="my-4">Ut eleifend neque ac arcu pharetra, quis dictum nibh aliquam. Phasellus fringilla ut tellus vitae gravida. Duis eget erat quis ipsum commodo mollis vitae nec metus. Phasellus iaculis venenatis libero cursus convallis. Ut imperdiet neque vel dui volutpat, eget posuere magna cursus. Pellentesque tempor suscipit enim vel venenatis. Praesent hendrerit dignissim erat a placerat. Suspendisse eu sapien sit amet nisi rhoncus molestie. </p>
+            <p class="my-4">Suspendisse ac sapien ac massa egestas eleifend non at nulla. Quisque aliquet urna a lorem imperdiet pharetra. Ut volutpat gravida dolor sed ultricies. Donec non varius mi. Pellentesque iaculis, risus ut malesuada tincidunt, purus turpis sagittis arcu, nec mollis odio erat in sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas dignissim lacus at malesuada varius. Vivamus consequat mauris vitae nisl porta, at lacinia felis gravida. Donec facilisis auctor posuere. Donec sagittis dapibus laoreet. Integer maximus dolor eu accumsan bibendum. Etiam feugiat pharetra rutrum. Etiam sagittis ullamcorper elit, id molestie tortor fringilla vel. </p>
+            <p class="my-4">Nulla scelerisque lectus nunc. Maecenas dapibus, nisl ac placerat dapibus, leo risus posuere risus, ac pretium ante risus et felis. Proin eget placerat nisi. Mauris eu consectetur ligula. Sed aliquam turpis eget enim efficitur rutrum. Praesent feugiat felis vel nisi venenatis luctus. Cras tristique purus dui, id lobortis ligula euismod quis. Proin ut justo nec nisi tincidunt ullamcorper. Integer tincidunt, nunc eget viverra varius, ex nisi iaculis quam, vel finibus mauris purus in felis. In metus nisl, tempor vel libero quis, fermentum auctor urna. Donec quis laoreet ante. </p>
+        </div>
+    </section>
+
+    <!--our services-->
+    <section class="our-services mx-6-desktop-only mt-6">
+        <h3 class="is-size-3">Our Services</h3>
+        <h3>ー かくご</h3>
+        <!--service1-->
+        <div class="is-flex is-justify-content-center service service1" id="service1">
+            <div class="my-5 img-box-container">
+                <div class="numberX">
+                    <span>1. Service one</span>
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/kubist-ichigo2.svg" class="beforehover" onmouseover="$(this).hide();$('#img1').fadeIn()" alt="">
+                    <img id="img1" src="./assets/images/sword-g4e01594a9_1280.png" alt="" style="display: none;">
+                </div>
+            </div>
+            <div class="text-box right">
+                <h4 class="is-size-4 mb-1 title">Cyber Security</h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+        </div>
+        <!--service2-->
+        <div class="is-flex is-justify-content-center service service-wrap service2" id="service2">
+            <div class="text-box left">
+                <h4 class="is-size-4 mb-1 title">for Apps and More Apps</h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+            <div class="img-box-container my-5">
+                <div class="numberX">
+                    <span>2. Service Two</span>
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/kubist-vivi.svg" class="beforehover" onmouseover="$(this).hide();$('#img2').fadeIn()" alt="">
+                    <img id="img2" src="./assets/images/ronin-g7a0da5a58_1920.png" alt="" style="display: none     ;">
+                </div>
+            </div>
+        </div>
+        <!--service3-->
+        <div class="is-flex is-justify-content-center service service1" id="service3">
+            <div class="my-5 img-box-container">
+                <div class="numberX">
+                    <span>3. Service Three</span>
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/kubist-steiner.svg" class="beforehover" onmouseover="$(this).hide();$('#img3').fadeIn()" alt="">
+                    <img id="img3" src="./assets/images/samurai-gaed964067_1920.jpg" alt="" style="display: none;">
+                </div>
+            </div>
+            <div class="text-box right">
+                <h4 class="is-size-4 mb-1 title">
+                    Attack Surface Analysis
+                    </h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+        </div>
+        <!--service4-->
+        <div class="is-flex is-justify-content-center service service-wrap service2" id="service4">
+            <div class="text-box left">
+                <h4 class="is-size-4 mb-1 title">AppSec and
+                    DevOps Security</h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+            <div class="img-box-container my-5">
+                <div class="numberX">
+                    <span>4. Service Four</span>
+                </div>
+                <div class="img-box ">
+                    <img src="./assets/images/kubist-vivi.svg" class="beforehover" onmouseover="$(this).hide();$('#img4').fadeIn()" alt="">
+                    <img id="img4" src="./assets/images/yccYyFT.jpg" alt="" style="display: none     ;">
+                </div>
+            </div>
+        </div>
+        <!--service5-->
+        <div class="is-flex is-justify-content-center service service1" id="service5">
+            <div class="img-box-container my-5">
+                <div class="numberX">
+                    <span>5. Service Five</span>
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/kubist-ichigo.svg" class="beforehover" onmouseover="$(this).hide();$('#img5').fadeIn()" alt="">
+                    <img id="img5" src="./assets/images/Kyp1MSB-samurai-wallpapers.jpg" alt="" style="display: none     ;">
+                </div>
+            </div>
+            <div class="text-box right">
+                <h4 class="is-size-4 mb-1 title">Passwordless Login and
+                    Modern Authentication</h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+        </div>
+        <!--service6-->
+        <div class="is-flex is-justify-content-center service service-wrap service2" id="service6">
+            <div class="text-box left">
+                <h4 class="is-size-4 mb-1 title">Cybersecurity & Privacy Advisory</h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+            <div class="img-box-container my-5">
+                <div class="numberX">
+                    <span>6. Service Six</span>
+                </div>
+                <div class="img-box ">
+                    <img src="./assets/images/kubist-edea.svg" class="beforehover" onmouseover="$(this).hide();$('#img6').fadeIn()" alt="">
+                    <img id="img6" src="./assets/images/bMc5UOb-anime-samurai-wallpaper.jpg" alt="" style="display: none     ;">
+                </div>
+            </div>
+        </div>
+        <!--service7-->
+        <div class="is-flex is-justify-content-center service service2" id="service7">
+            <div class="my-5 img-box-container">
+                <div class="numberX">
+                    <span>7. Service Seven</span>
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/kubist-beatrix.svg" class="beforehover" onmouseover="$(this).hide();$('#img7').fadeIn()" alt="">
+                    <img id="img7" src="./assets/images/uwp943608.png" alt="" style="display: none;">
+                </div>
+            </div>
+            <div class="text-box right">
+                <h4 class="is-size-4 mb-1 title">Research as a Service</h4>
+                <p> Lorem ipsum dolor sit amet </p>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo. Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti. Phasellus eget risus et justo pharetra venenatis a id massa. Pellentesque eget finibus nisi. Quisque augue nisi, volutpat non mauris ut, sodales mattis erat. .
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact is-flex is-justify-content-center is-align-items-center mt-6" id="contact">
+        <div class="img-box">
+            <img src="./assets/images/828Z_nov1.jpg" alt="">
+        </div>
+
+        <div class="text-box ml-4">
+            <h3 class="is-size-3 mb-4">Contact</h3>
+            <h3 class="title mb-2">Mr Anderson</h3>
+            <span class="mb-2">Founder and AppSec Specialist</span>
+            <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque lectus vitae libero pellentesque consequat ut a justo.</p>
+            <p>Morbi euismod ornare dui, et facilisis metus semper a. Proin et tellus mattis, fringilla dui quis, rhoncus velit. Aenean nec dignissim nulla, id aliquet enim. Suspendisse potenti.</p>
+            <div class="mt-5">
+                <button class="button is-link1 is-medium is-dark"><i class="fa fa-envelope"></i> &nbsp;&nbsp; anderson@kakugo.ch</button>
+                <button class="button is-info1 is-medium is-dark"><i class="fa fa-phone"></i> &nbsp;&nbsp; +99 79 955 12 11</button>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="mt-6">
+        <p class="ti">Kakugo GmbH</p>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+$dark-nav-bg: rgb(21,18,18,0.85);
+$dark-global-bg: #221E1E;
+$dark-text-color : #ffff;
+$dark-title-color: #E2DECA;
+$light-title-color: #B3AA82;
+$primary: #C52244;
+$font-family:'Space Mono', monospace;
+$light-nav-bg: rgba(219, 213, 213, 0.85);
+
+$max-width: 1400px;
+// custom bulma vars
+$navbar-background-color: var(--color-nav);
+$navbar-item-hover-background-color: var(--color-nav);
+$navbar-item-color: var(--color-text);
+$navbar-item-hover-color: var(--color-text);
+$navbar-dropdown-background-color: var(--color-nav);
+$navbar-burger-color: var(--color-text);
+$navbar-dropdown-arrow: var(--color-text);
+$navbar-dropdown-item-hover-background-color:#0d2e5b;
+$navbar-dropdown-item-hover-color: #fff;
+/*--------------- ---- Responsive --------------------------*/
+
+$md:'only screen and (min-width: 577px) and (max-width: 992px)';//
+$sm: 'only screen and (min-width: 577px) and (max-width: 768px)';//
+$xs:'(max-width: 576px)';//
+$tab: '(max-width: 992px)';//
+$extra_big_screen2: 'only screen and (min-width: 1517px)';
+$horizontal-mobile: 'screen and (max-width: 900px) and (max-height: 700px)';

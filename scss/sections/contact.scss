@@ -1,0 +1,66 @@
+.contact{
+    color: $dark-global-bg;
+    font-family: $font-family;
+    background: var(--color-title);
+    margin: 0 40px;
+    padding-right: 20px;
+    border-radius: 10px;
+    position: relative;
+    @media #{$tab}{
+        padding: 10px;
+        flex-wrap: wrap;
+        margin: 0 1.5rem;
+    } 
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.13;
+        background: url('../images/toppng.com-black-abstract-png-abstract-technology-vector-676x323.png');
+    }
+    .title{
+        color: $dark-global-bg;
+    }
+    .text-box{
+        width: 70%;
+        position: relative;
+        z-index: 1;
+        @media #{$tab}{
+            width: 100%;
+            margin-left: 0 !important;
+            margin-top: 30px;
+            p{
+                font-size: 16px;
+            }
+            button{
+                margin: 5px 0;
+            }
+        }
+        span{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .img-box{
+        height: 500px;
+        position: relative;
+        z-index: 1;
+        width: 30%;
+        @media #{$tab}{
+            display: none;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+    
+}

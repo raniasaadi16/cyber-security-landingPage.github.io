@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+:root{
+    @each $name, $color in $default-mode{
+        --color-#{$name}: #{$color};
+    };
+};
+html[data-mode='light']{
+    @each $name, $color in $light-mode{
+        --color-#{$name}: #{$color};
+    };
+}
+html{
+    min-height: 100%;
+    background: var(--color-base) !important;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    background-color: var(--color-base);
+    color: var(--color-text);
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    z-index: -1;
+}

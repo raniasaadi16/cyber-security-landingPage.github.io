@@ -1,0 +1,38 @@
+.our-why{
+    color: var(--color-text);
+    font-family: $font-family;
+    margin: 0 40px ;
+    @media #{$tab}{
+        margin: 0 1.5rem !important;
+    }
+    .img-box{
+        margin: auto;
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            @media #{$extra_big_screen2}{
+                height: 700px;
+            }
+        }
+    }
+    .text-box{
+        position: relative;
+        max-width: $max-width;
+        margin: auto;
+        p{
+            z-index: 2;
+            position: relative;
+            @media #{$xs}{
+                font-size: 14px;
+            }
+        }
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
